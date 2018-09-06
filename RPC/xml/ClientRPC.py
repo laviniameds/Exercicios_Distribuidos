@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import xmlrpc.client #importa a biblioteca RPC xml do lado cliente
 
 with xmlrpc.client.ServerProxy("http://localhost:8000/") as proxy: #define um proxy
