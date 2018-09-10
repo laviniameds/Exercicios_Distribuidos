@@ -11,6 +11,6 @@ while True:
     while True:
         msg = con.recv(1024) #recebe a mensagem
         if not msg: break
-        print cliente, msg
+        print socket.gethostbyname(msg)
     print 'Finalizando conexao do cliente', cliente
     con.close()
