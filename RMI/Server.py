@@ -1,3 +1,11 @@
+"""
+
+precisa ter o 'pyro' instalado (sudo apt install pyro)
+e inicializado (pyro-ns)
+
+"""
+
+
 import Pyro.core
 import Pyro.naming
 
