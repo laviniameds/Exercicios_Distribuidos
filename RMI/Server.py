@@ -17,7 +17,7 @@ class JokeGen(Pyro.core.ObjBase):
 
 def main():
     Pyro.core.initServer()
-    ns=Pyro.naming.NameServerLocator().getNS()
+    ns=Pyro.naming.NameServerLocator().getNS( ) #usa o servico de nome
     daemon=Pyro.core.Daemon()
     daemon.useNameServer(ns)
     uri=daemon.connect(JokeGen(),"jokegen")
